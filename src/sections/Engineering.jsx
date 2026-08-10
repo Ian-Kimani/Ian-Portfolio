@@ -1,97 +1,60 @@
-import {
-  Database,
-  GitBranch,
-  Layers3,
-  Server,
-  Workflow,
-} from "lucide-react";
-
-import SectionHeading from "../components/SectionHeading";
+import { motion } from "framer-motion";
 
 const areas = [
   {
-    icon: Server,
-    title: "Backend Systems",
-    description:
-      "Building APIs, authentication, business logic, validation, and services that form the backbone of an application.",
-    technologies: ["Node.js", "Express", "FastAPI"],
+    id: "01",
+    title: "BACKEND",
+    description: "I design APIs and backend services around clear business rules, reliable data flow, authentication, and maintainable architecture.",
   },
   {
-    icon: Database,
-    title: "Data & Databases",
-    description:
-      "Designing relational data models and working with databases as a fundamental part of the system rather than an afterthought.",
-    technologies: ["PostgreSQL", "Prisma", "SQL"],
+    id: "02",
+    title: "DATA",
+    description: "I treat database design as part of the architecture, not an afterthought. I work with relational models, constraints, transactions, and business-critical data.",
   },
   {
-    icon: Workflow,
-    title: "System Design",
-    description:
-      "Thinking about data flow, service boundaries, failure cases, scalability, and the engineering decisions behind an application.",
-    technologies: ["Architecture", "APIs", "Data Flow"],
+    id: "03",
+    title: "SYSTEMS",
+    description: "I enjoy solving problems where software meets the real world — from payment and messaging integrations to hardware and offline-first applications.",
   },
   {
-    icon: Layers3,
-    title: "Full-Stack Development",
-    description:
-      "Connecting frontend interfaces to reliable backend systems and turning complete product requirements into working software.",
-    technologies: ["React", "JavaScript", "REST"],
-  },
-  {
-    icon: GitBranch,
-    title: "Integrations & Automation",
-    description:
-      "Connecting software to external services and automating real-world workflows such as payments, messaging, and notifications.",
-    technologies: ["APIs", "SMS", "Webhooks"],
+    id: "04",
+    title: "PRODUCT",
+    description: "I build around actual problems rather than technology for its own sake. My projects are driven by users, workflows, and operational constraints.",
   },
 ];
 
 function Engineering() {
   return (
-    <section id="engineering" className="border-y border-zinc-900 px-6 py-32">
+    <section id="engineering" className="border-t border-zinc-900 px-6 py-32">
       <div className="mx-auto max-w-6xl">
-        <SectionHeading
-          eyebrow="Engineering"
-          title="How I think about software."
-          description="I'm interested not only in making applications work, but in understanding the engineering decisions behind them."
-        />
+        <h2 className="mb-8 text-xs font-semibold uppercase tracking-[0.2em] text-zinc-500">
+          Engineering
+        </h2>
+        
+        <h3 className="mb-24 text-3xl font-medium tracking-tight text-zinc-100 sm:text-5xl md:text-6xl max-w-3xl">
+          I care about what happens behind the interface.
+        </h3>
 
-        <div className="grid gap-px overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-800 md:grid-cols-2 lg:grid-cols-3">
-          {areas.map((area) => {
-            const Icon = area.icon;
-
-            return (
-              <article
-                key={area.title}
-                className="group bg-[#08090a] p-7 transition hover:bg-zinc-950"
-              >
-                <Icon
-                  size={22}
-                  strokeWidth={1.5}
-                  className="text-zinc-500 transition group-hover:text-blue-400"
-                />
-
-                <h3 className="mt-8 text-lg font-medium">
-                  {area.title}
-                </h3>
-
-                <p className="mt-3 text-sm leading-6 text-zinc-500">
-                  {area.description}
-                </p>
-
-                <div className="mt-6 flex flex-wrap gap-2">
-                  {area.technologies.map((technology) => (
-                    <span
-                      key={technology}
-                      className="text-xs text-zinc-600"
-                    >
-                      {technology}
-                    </span>
-                  ))}
-                </div>
-              </article>
-            );
-          })}
+        <div className="grid gap-12 md:grid-cols-2 md:gap-x-16 md:gap-y-24">
+          {areas.map((area, idx) => (
+            <motion.article
+              key={area.id}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: idx * 0.1 }}
+              className="flex flex-col border-t border-zinc-900 pt-8"
+            >
+              <h4 className="mb-6 flex items-center gap-4 text-sm font-semibold tracking-widest text-zinc-100">
+                <span className="text-zinc-500">{area.id}</span>
+                <span className="h-px w-6 bg-zinc-800"></span>
+                {area.title}
+              </h4>
+              <p className="text-lg leading-relaxed text-zinc-400">
+                {area.description}
+              </p>
+            </motion.article>
+          ))}
         </div>
       </div>
     </section>

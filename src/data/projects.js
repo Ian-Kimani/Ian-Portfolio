@@ -1,26 +1,28 @@
 const projects = [
   {
     slug: "miliqo",
-    title: "Miliqo",
-    category: "SaaS · Rental Management System",
+    id: "01",
+    title: "MILIQO",
+    category: "RENTAL MANAGEMENT SAAS",
     description:
       "A complete property management platform handling the entire tenancy lifecycle, automated rent generation, and complex utility cost distribution.",
     stack: ["React", "Node.js", "Express", "PostgreSQL", "Prisma"],
     image: "/images/miliqo.png",
     status: "Live",
     caseStudy: {
-      problem: "Landlords and property managers struggle to manage multiple properties, tenants, and utility bills. Calculating individual electricity and water bills is time-consuming and error-prone. Keeping track of who paid what, partial payments, and overpayments requires too many spreadsheets and leads to financial losses.",
-      architecture: "I built Miliqo using a React frontend and a Node.js/Express backend, backed by PostgreSQL and Prisma. The database is carefully designed to link Properties, Houses, and Tenants and all their bills of rent , water , electricity or others. It also features a robust Role-Based Access Control (RBAC) system so managers only ever see their own property data.",
+      problem: "Landlords and property managers struggle to manage multiple properties, tenants, and utility bills. Calculating individual electricity and water bills based on varying meter readings is error-prone. Keeping track of partial payments, floating balances, and tenant communication requires constant context-switching across different tools.",
+      architecture: "I built Miliqo using a React frontend and a Node.js/Express backend, backed by PostgreSQL and Prisma. The database is carefully designed to link Properties, Houses, and Tenants and all their bills of rent, water, electricity or others. It also features a robust Role-Based Access Control (RBAC) system so managers only ever see their own property data.",
       solution: "The platform completely automates property management. It tracks lease agreements, automatically generates monthly rent bills, and accurately calculates individual electricity and water bills based on meter readings. It handles complex financials like floating credit balances, tracks property expenses, and even sends automated SMS and WhatsApp notifications to tenants for pending bills."
     }
   },
   {
-    slug: "kahawamanager-desktop",
-    title: "KahawaManager Edge",
-    category: "Desktop · Coffee Factory IoT",
+    slug: "kahawamanager-edge",
+    id: "02",
+    title: "KAHAWAMANAGER EDGE",
+    category: "COFFEE FACTORY IOT",
     description:
-      "An offline-first Python management system built for coffee factories. It connects directly to hardware scales (via PySerial) to manage daily deliveries, weights, sending sms notifications the moment a farmer weighs his coffee and prints receipts instantly.",
-    stack: ["Python", "CustomTkinter", "SQLite", "PySerial"],
+      "An offline-first desktop system for coffee factories, connecting software with weighing hardware and operational workflows.",
+    stack: ["Python", "Tkinter", "PostgreSQL/SQLite", "PySerial"],
     image: "/images/kahawa_manager_edge.png",
     status: "In development",
     caseStudy: {
@@ -31,10 +33,11 @@ const projects = [
   },
   {
     slug: "kahawamanager-cloud",
-    title: "KahawaManager Cloud",
-    category: "Web · Distributed Systems",
+    id: "03",
+    title: "KAHAWAMANAGER CLOUD",
+    category: "DISTRIBUTED SYSTEMS",
     description:
-      "A multi-tenant Node.js cloud dashboard that synchronizes via a custom delta-sync protocol with offline edge devices. Managers can track global factory yields, metrics, and manage payouts remotely.",
+      "A multi-tenant Node.js cloud dashboard that synchronizes via a custom delta-sync protocol with offline edge devices.",
     stack: ["React", "Node.js", "PostgreSQL", "Delta Sync"],
     image: "/images/kahawa_manager_cloud.png",
     status: "In development",

@@ -1,87 +1,53 @@
-import {
-  Code2,
-  Database,
-  LayoutTemplate,
-  Server,
-  Terminal,
-  Webhook
-} from "lucide-react";
-import SectionHeading from "../components/SectionHeading";
-
 const skillCategories = [
   {
-    icon: Code2,
-    title: "Languages",
-    skills: ["JavaScript", "Python", "SQL", "HTML / CSS"],
+    title: "LANGUAGES",
+    skills: ["JavaScript", "Python", "SQL", "HTML", "CSS"],
   },
   {
-    icon: Server,
-    title: "Backend & APIs",
-    skills: ["Node.js", "Express", "REST APIs", "Authentication & authorization"],
+    title: "BACKEND",
+    skills: ["Node.js", "Express", "REST APIs", "Prisma", "Authentication", "API Design"],
   },
   {
-    icon: Database,
-    title: "Databases",
-    skills: ["PostgreSQL", "Prisma", "SQL", "Database design", "Transactions & relational modeling"],
+    title: "FRONTEND",
+    skills: ["React", "Tailwind CSS", "Responsive UI"],
   },
   {
-    icon: LayoutTemplate,
-    title: "Frontend",
-    skills: ["React", "JavaScript", "Tailwind CSS", "Responsive UI"],
+    title: "DATABASES",
+    skills: ["PostgreSQL", "SQLite", "Relational Database Design", "Data Modeling", "Transactions"],
   },
   {
-    icon: Terminal,
-    title: "Systems & Tools",
-    skills: ["Git & GitHub", "Docker", "Linux / CLI", "Postman", "Vercel Render"],
+    title: "SYSTEMS & TOOLS",
+    skills: ["Git", "GitHub", "Docker", "Linux / CLI", "Postman", "Vercel"],
   },
   {
-    icon: Webhook,
-    title: "Integrations",
-    skills: ["M-Pesa / payment APIs", "SMS APIs", "Webhooks", "Serial communication", "Hardware integration"],
+    title: "INTEGRATIONS",
+    skills: ["M-Pesa APIs", "SMS APIs", "Webhooks", "Serial Communication", "Hardware / IoT"],
   },
 ];
 
 function Skills() {
   return (
-    <section id="skills" className="px-6 py-32">
+    <section id="skills" className="border-t border-zinc-900 px-6 py-32">
       <div className="mx-auto max-w-6xl">
-        <SectionHeading
-          eyebrow="Skills"
-          title="Technologies I work with."
-          description="A comprehensive list of the languages, frameworks, and tools I use to build scalable systems."
-        />
+        <h2 className="mb-24 text-xs font-semibold uppercase tracking-[0.2em] text-zinc-500">
+          Technical Skills
+        </h2>
 
-        <div className="grid gap-px overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-800 md:grid-cols-2 lg:grid-cols-3">
-          {skillCategories.map((category) => {
-            const Icon = category.icon;
-
-            return (
-              <article
-                key={category.title}
-                className="group bg-[#08090a] p-7 transition hover:bg-zinc-950"
-              >
-                <div className="mb-6 flex items-center gap-3">
-                  <Icon
-                    size={22}
-                    strokeWidth={1.5}
-                    className="text-zinc-500 transition group-hover:text-blue-400"
-                  />
-                  <h3 className="text-lg font-medium text-white">
-                    {category.title}
-                  </h3>
-                </div>
-
-                <ul className="space-y-3">
-                  {category.skills.map((skill) => (
-                    <li key={skill} className="flex items-center gap-2 text-sm text-zinc-400">
-                      <span className="h-1.5 w-1.5 rounded-full bg-blue-500/50" />
-                      {skill}
-                    </li>
-                  ))}
-                </ul>
-              </article>
-            );
-          })}
+        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3 lg:gap-16">
+          {skillCategories.map((category) => (
+            <div key={category.title}>
+              <h3 className="mb-6 text-sm font-semibold tracking-widest text-zinc-100">
+                {category.title}
+              </h3>
+              <ul className="flex flex-col gap-3">
+                {category.skills.map((skill) => (
+                  <li key={skill} className="text-zinc-400">
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
     </section>

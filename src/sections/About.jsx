@@ -1,66 +1,57 @@
-import SectionHeading from "../components/SectionHeading";
-
-const highlights = [
-  {
-    value: "2026",
-    label: "Building real-world products",
-  },
-  {
-    value: "BSc",
-    label: "Mathematics & Computer Science",
-  },
-];
-
 function About() {
   return (
-    <section id="about" className="px-6 py-32">
+    <section id="about" className="border-t border-zinc-900 px-6 py-32">
       <div className="mx-auto max-w-6xl">
-        <div className="grid gap-16 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
-          <SectionHeading
-            eyebrow="About"
-            title="Engineering scalable solutions."
-          />
+        <h2 className="mb-8 text-xs font-semibold uppercase tracking-[0.2em] text-zinc-500">
+          About
+        </h2>
 
+        <div className="grid gap-16 lg:grid-cols-[1.5fr_1fr] lg:gap-24">
           <div>
-            <div className="space-y-6 text-lg leading-8 text-zinc-400">
-              <p>
-                I'm Ian, a Software Engineer with a strong foundation in Mathematics & Computer Science from
-                Kenyatta University.
-              </p>
+            <h3 className="mb-12 text-3xl font-medium tracking-tight text-zinc-100 sm:text-4xl md:text-5xl">
+              Building software by solving problems.
+            </h3>
 
+            <div className="space-y-6 text-lg leading-relaxed text-zinc-400">
               <p>
-                My expertise lies in backend engineering, distributed systems, and building complex 
-                APIs. I specialize in designing offline-first architectures and ensuring data integrity
-                between edge devices and the cloud.
+                I'm a Software engineer interested in backend development, system design, and building software that has to work in the real world. I enjoy building systems that solve problems, and I have a particular interest in backend architecture, databases, APIs, and integrations.
               </p>
-
               <p>
-                I prefer learning by building real products around real
-                problems. That has led me to develop software for rental
-                management and coffee factory operations while learning
-                what it actually takes to turn an idea into a usable
-                system.
+                I've been building products around real-world problems, including a rental management platform and an offline-first system for coffee factories.
               </p>
-
               <p>
-                I'm currently focused on becoming a stronger engineer —
-                understanding not just how to write code, but why systems
-                are designed the way they are.
+                I'm particularly interested in backend architecture, databases, APIs, integrations, and understanding how the pieces of a system fit together.
               </p>
             </div>
+          </div>
 
-            <div className="mt-12 grid grid-cols-3 border-y border-zinc-800 py-8">
-              {highlights.map((item) => (
-                <div key={item.value}>
-                  <p className="text-2xl font-semibold tracking-tight">
-                    {item.value}
-                  </p>
-
-                  <p className="mt-2 max-w-[120px] text-xs leading-5 text-zinc-600">
-                    {item.label}
-                  </p>
-                </div>
-              ))}
+          <div className="flex flex-col gap-8 rounded-2xl border border-zinc-800 bg-zinc-900/30 p-8 sm:p-10">
+            <div>
+              <h4 className="mb-2 text-xs font-semibold uppercase tracking-widest text-zinc-500">
+                Based In
+              </h4>
+              <p className="text-zinc-100">Kenya</p>
+            </div>
+            
+            <div>
+              <h4 className="mb-2 text-xs font-semibold uppercase tracking-widest text-zinc-500">
+                Focus
+              </h4>
+              <p className="text-zinc-100">Backend / Full-stack</p>
+            </div>
+            
+            <div>
+              <h4 className="mb-2 text-xs font-semibold uppercase tracking-widest text-zinc-500">
+                Currently
+              </h4>
+              <p className="text-zinc-100">Building & learning</p>
+            </div>
+            
+            <div>
+              <h4 className="mb-2 text-xs font-semibold uppercase tracking-widest text-zinc-500">
+                Interests
+              </h4>
+              <p className="text-zinc-100">Systems · Databases · Product</p>
             </div>
           </div>
         </div>
