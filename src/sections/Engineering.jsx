@@ -9,7 +9,7 @@ const areas = [
   {
     id: "02",
     title: "DATA",
-    description: "I treat database design as part of the architecture, not an afterthought. I work with relational models, constraints, transactions, and business-critical data.",
+    description: "I treat database design as part of the architecture. I work with relational models, constraints, transactions, and business-critical data.",
   },
   {
     id: "03",
