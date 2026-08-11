@@ -17,7 +17,7 @@ const skillCategories = [
   },
   {
     title: "SYSTEMS & TOOLS",
-    skills: ["Git", "GitHub", "Docker", "Linux / CLI", "Postman", "Vercel"],
+    skills: ["Git", "GitHub", "Docker", "Linux / CLI", "Postman", "Render", "Vercel"],
   },
   {
     title: "INTEGRATIONS",
