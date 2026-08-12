@@ -21,16 +21,16 @@ function Hero() {
 
       <div className="relative mx-auto w-full max-w-6xl pt-20">
         <div className="max-w-4xl">
-          <motion.p
+          <motion.h1
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             className="mb-8 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-zinc-500"
           >
             Software Engineer
-          </motion.p>
+          </motion.h1>
 
-          <motion.h1
+          <motion.p
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
@@ -39,7 +39,7 @@ function Hero() {
             <span className="text-zinc-100">I build</span>
             <br />
             <span className="text-zinc-600">systems that work.</span>
-          </motion.h1>
+          </motion.p>
 
           <motion.p
             initial={{ opacity: 0, y: 10 }}

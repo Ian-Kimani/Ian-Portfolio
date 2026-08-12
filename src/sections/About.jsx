@@ -17,7 +17,7 @@ function About() {
             >
               <img
                 src="/images/profile.png"
-                alt="Portrait of Ian Wabacha"
+                alt="Portrait of Ian Kimani"
                 className="w-full object-cover transition-opacity duration-500"
                 loading="lazy"
               />

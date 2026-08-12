@@ -26,7 +26,7 @@ function CaseStudy() {
   return (
     <>
       <SEO 
-        title={`${project.title} | Case Study | Ian Kimani`}
+        title={project.seoTitle || `${project.title} | Case Study | Ian Kimani`}
         description={project.caseStudy.problem.substring(0, 150) + "..."}
         url={`https://iankimani.me/case-study/${slug}`}
         type="article"
@@ -76,6 +76,17 @@ function CaseStudy() {
                 {project.caseStudy.solution}
               </p>
             </section>
+            
+            {project.related && (
+              <div className="mt-8 rounded-xl border border-zinc-800 bg-zinc-900/30 p-6">
+                <p className="text-sm text-zinc-400">
+                  {project.related.text}{" "}
+                  <Link to={`/case-study/${project.related.slug}`} className="text-blue-400 hover:text-blue-300 underline underline-offset-4">
+                    {project.related.linkText}
+                  </Link>.
+                </p>
+              </div>
+            )}
           </div>
 
           <aside>
