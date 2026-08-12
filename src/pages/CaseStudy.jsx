@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import projects from "../data/projects";
+import SEO from "../components/SEO";
 
 function CaseStudy() {
   const { slug } = useParams();
@@ -23,9 +24,17 @@ function CaseStudy() {
   }
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-zinc-100 selection:bg-zinc-800">
-      <div className="mx-auto max-w-4xl px-6 py-20">
-        <Link to="/" className="group mb-16 inline-flex items-center gap-3 text-sm font-semibold tracking-widest uppercase text-zinc-500 transition hover:text-zinc-100">
+    <>
+      <SEO 
+        title={`${project.title} | Case Study | Ian Kimani`}
+        description={project.caseStudy.problem.substring(0, 150) + "..."}
+        url={`https://iankimani.me/case-study/${slug}`}
+        type="article"
+        image={project.image ? `https://iankimani.me${project.image}` : undefined}
+      />
+      <div className="min-h-screen bg-[#0a0a0a] text-zinc-100 selection:bg-zinc-800">
+        <div className="mx-auto max-w-4xl px-6 py-20">
+          <Link to="/" className="group mb-16 inline-flex items-center gap-3 text-sm font-semibold tracking-widest uppercase text-zinc-500 transition hover:text-zinc-100">
           <ArrowLeft size={16} className="transition-transform group-hover:-translate-x-1" />
           Back
         </Link>
@@ -41,7 +50,7 @@ function CaseStudy() {
 
         {project.image && (
           <div className="mb-24 overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900">
-            <img src={project.image} alt={project.title} className="w-full object-cover" />
+            <img src={project.image} alt={project.altText || project.title} className="w-full object-cover" />
           </div>
         )}
 
@@ -94,6 +103,7 @@ function CaseStudy() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

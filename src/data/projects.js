@@ -8,6 +8,7 @@ const projects = [
       "A complete property management platform handling the entire tenancy lifecycle, automated rent generation, and complex utility cost distribution.",
     stack: ["React", "Node.js", "Express", "PostgreSQL", "Prisma"],
     image: "/images/miliqo.png",
+    altText: "Miliqo rental management dashboard showing property and rent collection data",
     status: "Live",
     caseStudy: {
       problem: "Landlords and property managers struggle to manage multiple properties, tenants, and utility bills. Calculating individual electricity and water bills based on varying meter readings is error-prone. Keeping track of partial payments, floating balances, and tenant communication requires constant context-switching across different tools.",
@@ -24,6 +25,7 @@ const projects = [
       "An offline-first desktop system for coffee factories, connecting software with weighing hardware and operational workflows.",
     stack: ["Python", "Tkinter", "PostgreSQL/SQLite", "PySerial"],
     image: "/images/kahawa_manager_edge.png",
+    altText: "KahawaManager Edge desktop interface showing hardware integration and coffee weighing data",
     status: "In development",
     caseStudy: {
       problem: "Rural coffee factories often have no internet and face frequent power outages. Using cloud software is impossible, and recording thousands of farmers' coffee deliveries on paper leads to massive delays, calculation errors, and fraud at the weighing station.",
@@ -40,6 +42,7 @@ const projects = [
       "A multi-tenant Node.js cloud dashboard that synchronizes via a custom delta-sync protocol with offline edge devices.",
     stack: ["React", "Node.js", "PostgreSQL", "Delta Sync"],
     image: "/images/kahawa_manager_cloud.png",
+    altText: "KahawaManager Cloud dashboard displaying distributed analytics and farmer financial records",
     status: "In development",
     caseStudy: {
       problem: "While the Edge app works perfectly at the local factory level, society chairmen and factory managers need to monitor daily yields, track performance, and process financial payouts for thousands of farmers across multiple disconnected factories from a central office.",

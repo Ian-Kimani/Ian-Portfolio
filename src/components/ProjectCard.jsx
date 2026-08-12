@@ -47,7 +47,7 @@ function ProjectCard({ project }) {
           {project.image ? (
             <img 
               src={project.image} 
-              alt={project.title} 
+              alt={project.altText || project.title} 
               className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" 
             />
           ) : (
