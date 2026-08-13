@@ -3,7 +3,7 @@ function Footer() {
     <footer className="border-t border-zinc-900 px-6 py-8 bg-[#0a0a0a]">
       <div className="mx-auto flex max-w-6xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <p className="text-sm font-medium text-zinc-500 uppercase tracking-widest">
-          © 2026 Ian Wabacha
+          © 2026 Ian Kimani
         </p>
 
         <div className="flex items-center gap-6">
@@ -16,7 +16,7 @@ function Footer() {
             GitHub
           </a>
           <a
-            href="https://linkedin.com/in/ian-wabacha"
+            href="https://www.linkedin.com/in/iankimani"
             target="_blank"
             rel="noreferrer"
             className="text-sm font-medium text-zinc-500 transition hover:text-zinc-300"

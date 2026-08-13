@@ -33,7 +33,7 @@ function Contact() {
             </a>
             
             <a
-              href="https://linkedin.com/in/ian-wabacha"
+              href="https://www.linkedin.com/in/iankimani"
               target="_blank"
               rel="noreferrer"
               className="text-zinc-500 transition-colors hover:text-zinc-300"

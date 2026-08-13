@@ -17,7 +17,7 @@ function Navbar() {
           href="#"
           className="text-sm font-semibold tracking-widest text-zinc-100 uppercase"
         >
-          Ian Wabacha
+          Ian Kimani
         </a>
 
         {/* Desktop Nav */}
