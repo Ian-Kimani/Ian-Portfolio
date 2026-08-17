@@ -47,7 +47,7 @@ function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mt-10 max-w-2xl text-lg leading-relaxed text-zinc-400 sm:text-xl"
           >
-            I'm Ian, a software engineer focused on backend systems, APIs, databases, and building software that solves real-world problems.
+            I'm Ian Wabacha Kimani, a software engineer focused on backend systems, APIs, databases, and building software that solves real-world problems.
           </motion.p>
 
           <motion.div

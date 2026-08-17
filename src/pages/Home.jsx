@@ -13,7 +13,7 @@ function Home() {
   return (
     <>
       <SEO 
-        title="Ian Kimani | Software Engineer" 
+        title="Ian Wabacha Kimani | Software Engineer" 
         description="Ian Kimani is a software engineer focused on backend systems, APIs, databases, SaaS platforms, and practical software." 
         url="https://iankimani.me/"
       />
