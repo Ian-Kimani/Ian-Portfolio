@@ -31,17 +31,10 @@ export default function Home() {
               </p>
               <div className="intro__bio">
                 <p>
-                  Welcome to my corner of the internet. I'm a software engineer
-                  based in Nairobi, Kenya. I build software designed to work in
-                  the real world—focusing on backend reliability, sound system
-                  design, and practical tools that solve tangible problems for
-                  people and businesses.
+                  Welcome to my corner of the internet. I'm a software engineer based in Nairobi, Kenya. I build software designed to work in the real world—focusing on backend reliability, sound system design, and practical tools that solve tangible problems for people and businesses.
                 </p>
                 <p>
-                  My focus is on offline-first architectures, distributed delta-sync
-                  protocols, hardware integrations (like weighing scales and thermal
-                  printers), and scalable multi-tenant platforms operating in
-                  challenging rural and urban environments.
+                  I’m especially interested in software engineering best practices and applying AI to make systems smarter and more useful.
                 </p>
               </div>
               <div className="socials">
@@ -101,21 +94,27 @@ export default function Home() {
             <h2 className="section-title">Core Principles</h2>
             <div className="values-grid">
               <div className="value-item">
-                <p className="value-item__title">Offline-first by design</p>
+                <p className="value-item__title">Reliable systems</p>
                 <p className="value-item__desc">
-                  Software shouldn't break when connectivity drops. I design systems with local storage, atomic transactions, and conflict-free delta sync protocols so operations never halt.
+                  I care about building software that is stable, maintainable, and works consistently in real environments.
                 </p>
               </div>
               <div className="value-item">
-                <p className="value-item__title">Direct operational context</p>
+                <p className="value-item__title">Clear architecture</p>
                 <p className="value-item__desc">
-                  Connecting code to physical hardware—serial ports, weighing indicators, and thermal printers—eliminates human error and streamlines daily business workflows.
+                  Good data models, clean APIs, and thoughtful design make systems easier to understand and extend.
                 </p>
               </div>
               <div className="value-item">
-                <p className="value-item__title">Sound backend architectures</p>
+                <p className="value-item__title">Practical problem solving</p>
                 <p className="value-item__desc">
-                  Clean relational models, transactional data pipelines, and strict access controls that protect business-critical financial records.
+                  I focus on solving actual problems rather than chasing technology for its own sake.
+                </p>
+              </div>
+              <div className="value-item">
+                <p className="value-item__title">Growing with AI</p>
+                <p className="value-item__desc">
+                  I’m actively exploring how AI can improve the tools and systems I build.
                 </p>
               </div>
             </div>

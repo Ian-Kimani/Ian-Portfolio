@@ -6,7 +6,7 @@ const projects = [
     year: "2026",
     category: "Coffee Factory IoT & Edge Runtime",
     summary:
-      "Offline-first desktop system for rural coffee factories, connecting directly to digital weighing scales and thermal printers to automate farmer deliveries and prevent bookkeeping fraud.",
+      "Offline-first desktop system for coffee factories. Connects directly to digital weighing scales + thermal printers , records deliveries locally (even during power/internet outages), prints receipts, and sends SMS confirmations to farmers.",
     description:
       "An offline-first desktop application engineered for rural coffee factories across Kenya. Interfacing directly with digital weighing scales and thermal receipt printers, it captures unalterable delivery weights even in areas with zero internet connectivity.",
     stack: ["Python", "CustomTkinter", "SQLite / PostgreSQL", "PySerial", "ESC/POS", "Threading"],
@@ -44,7 +44,7 @@ const projects = [
     year: "2026",
     category: "Distributed Systems & Cloud Sync",
     summary:
-      "Multi-tenant cloud dashboard that synchronizes via a custom delta-sync protocol with offline factory devices, automating financial payouts, bulk notifications, and cooperative analytics.",
+      "Multi-tenant cloud dashboard that syncs with offline Edge devices . Handles analytics, factory expenses, farmer advances, bulk SMS, and end-of-season payments.",
     description:
       "A distributed, multi-tenant cloud management platform that synchronizes with remote KahawaManager Edge instances via an efficient delta-sync protocol, giving cooperative executives consolidated visibility and automated payout workflows.",
     stack: ["React", "Node.js", "Express", "PostgreSQL", "Delta Sync", "M-Pesa API", "Bulk SMS"],
@@ -82,7 +82,7 @@ const projects = [
     year: "2026",
     category: "Rental Management SaaS",
     summary:
-      "Complete property management platform handling tenancy lifecycles, automated rent billing, utility meter calculations, and automated tenant SMS/WhatsApp notifications.",
+      "Multi-tenant property management SaaS. Automated rent billing, arrears calculation, utility sub-metering, and print-ready invoices.",
     description:
       "A multi-tenant SaaS property management platform engineered to eliminate manual ledger tracking for residential and commercial landlords through automated billing engines and utility apportionment.",
     stack: ["React", "Node.js", "Express", "PostgreSQL", "Prisma", "RBAC", "WhatsApp API"],
@@ -115,7 +115,7 @@ const projects = [
     year: "2025",
     category: "Agritech : Field Telemetry",
     summary:
-      "Offline-capable agronomic field monitoring platform for agricultural extension officers to log farmer crop cycles, soil conditions, and harvest yield projections.",
+      "Platform for agricultural officers to track crop progress, soil conditions, and harvest projections.",
     description:
       "A resilient, offline-capable field survey and crop analytics platform designed for smallholder farmer cooperatives and field officers working in remote agricultural corridors.",
     stack: ["TypeScript", "React", "Node.js", "PostgreSQL", "IndexedDB", "PWA", "Data Modeling"],
