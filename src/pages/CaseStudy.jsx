@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft } from "lucide-react";
-import projects from "../data/projects";
+import SiteHeader from "../components/SiteHeader";
+import SiteFooter from "../components/SiteFooter";
 import SEO from "../components/SEO";
+import projects from "../data/projects";
 
-function CaseStudy() {
+export default function CaseStudy() {
   const { slug } = useParams();
   const project = projects.find((p) => p.slug === slug);
 
@@ -14,108 +15,148 @@ function CaseStudy() {
 
   if (!project) {
     return (
-      <div className="flex min-h-screen flex-col items-center justify-center bg-[#0a0a0a] text-zinc-100">
-        <h1 className="text-3xl font-medium">Project not found</h1>
-        <Link to="/" className="mt-8 text-sm font-semibold tracking-widest text-zinc-500 uppercase hover:text-zinc-100 transition">
-          Return Home
-        </Link>
+      <div className="site-shell">
+        <SiteHeader />
+        <main className="site-main" style={{ padding: "4rem 0", textAlign: "center" }}>
+          <h1 style={{ fontSize: "1.5rem", marginBottom: "1rem" }}>Project not found</h1>
+          <p>The project you're looking for doesn't exist.</p>
+          <Link to="/work" className="view-all" style={{ justifyContent: "center" }}>
+            Back to projects
+          </Link>
+        </main>
+        <SiteFooter />
       </div>
     );
   }
 
   return (
     <>
-      <SEO 
-        title={project.seoTitle || `${project.title} | Case Study | Ian Kimani`}
-        description={project.caseStudy.problem.substring(0, 150) + "..."}
+      <SEO
+        title={project.seoTitle || `${project.title} - Case Study | Ian Kimani`}
+        description={project.summary}
         url={`https://iankimani.me/case-study/${slug}`}
         type="article"
         image={project.image ? `https://iankimani.me${project.image}` : undefined}
       />
-      <div className="min-h-screen bg-[#0a0a0a] text-zinc-100 selection:bg-zinc-800">
-        <div className="mx-auto max-w-4xl px-6 py-20">
-          <Link to="/" className="group mb-16 inline-flex items-center gap-3 text-sm font-semibold tracking-widest uppercase text-zinc-500 transition hover:text-zinc-100">
-          <ArrowLeft size={16} className="transition-transform group-hover:-translate-x-1" />
-          Back
-        </Link>
-
-        <header className="mb-20">
-          <h1 className="mb-6 text-4xl font-medium tracking-tight text-zinc-100 sm:text-5xl md:text-6xl">
-            {project.title}
-          </h1>
-          <p className="mb-12 text-sm font-semibold uppercase tracking-widest text-blue-400">
-            {project.category}
-          </p>
-        </header>
-
-        {project.image && (
-          <div className="mb-24 overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900">
-            <img src={project.image} alt={project.altText || project.title} className="w-full object-cover" />
-          </div>
-        )}
-
-        <div className="grid gap-12 md:grid-cols-[1fr_250px]">
-          <div className="space-y-24">
-            <section>
-              <h2 className="mb-8 text-xs font-semibold uppercase tracking-widest text-zinc-500">The Problem</h2>
-              <p className="text-lg leading-relaxed text-zinc-400">
-                {project.caseStudy.problem}
-              </p>
-            </section>
-
-            <section>
-              <h2 className="mb-8 text-xs font-semibold uppercase tracking-widest text-zinc-500">Architecture & System Design</h2>
-              <p className="text-lg leading-relaxed text-zinc-400">
-                {project.caseStudy.architecture}
-              </p>
-            </section>
-            
-            <section>
-              <h2 className="mb-8 text-xs font-semibold uppercase tracking-widest text-zinc-500">The Solution</h2>
-              <p className="text-lg leading-relaxed text-zinc-400">
-                {project.caseStudy.solution}
-              </p>
-            </section>
-            
-            {project.related && (
-              <div className="mt-8 rounded-xl border border-zinc-800 bg-zinc-900/30 p-6">
-                <p className="text-sm text-zinc-400">
-                  {project.related.text}{" "}
-                  <Link to={`/case-study/${project.related.slug}`} className="text-blue-400 hover:text-blue-300 underline underline-offset-4">
-                    {project.related.linkText}
-                  </Link>.
-                </p>
-              </div>
-            )}
-          </div>
-
-          <aside>
-            <div className="sticky top-24 space-y-12">
-              <div>
-                <h3 className="mb-4 text-xs font-semibold uppercase tracking-widest text-zinc-500">Technology</h3>
-                <ul className="space-y-3 text-sm font-medium text-zinc-300">
-                  {project.stack.map((t) => <li key={t}>{t}</li>)}
-                </ul>
-              </div>
-              
-              <div>
-                <h3 className="mb-4 text-xs font-semibold uppercase tracking-widest text-zinc-500">Details</h3>
-                <ul className="space-y-3 text-sm text-zinc-400">
-                  <li>2026</li>
-                  <li>Independent Project</li>
-                  <li className="flex items-center gap-2 pt-4 text-zinc-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                    Private Repository
-                  </li>
-                </ul>
-              </div>
+      <a className="skip-link" href="#content">
+        Skip to content
+      </a>
+      <div className="site-shell">
+        <SiteHeader />
+        <main id="content" className="site-main">
+          {/* Detail Header */}
+          <div className="detail-header">
+            <p className="detail-header__eyebrow">Project Case Study</p>
+            <h1 className="detail-header__title">{project.title}</h1>
+            <p className="detail-header__desc">{project.description}</p>
+            <div className="detail-meta">
+              <span className="detail-meta__item">
+                <span className="detail-meta__label">Status</span> {project.status}
+              </span>
+              <span className="detail-meta__item">
+                <span className="detail-meta__label">Year</span> {project.year}
+              </span>
+              <span className="detail-meta__item">
+                <span className="detail-meta__label">Category</span> {project.category}
+              </span>
             </div>
-          </aside>
-        </div>
+          </div>
+
+          {/* Detail Layout: Article & Sidebar */}
+          <div className="detail-layout">
+            <article className="prose">
+              {project.image && (
+                <div style={{ marginBottom: "2rem" }}>
+                  <img
+                    src={project.image}
+                    alt={project.altText || project.title}
+                    style={{
+                      width: "100%",
+                      borderRadius: "var(--radius-lg)",
+                      border: "1px solid var(--border)"
+                    }}
+                  />
+                </div>
+              )}
+
+              {project.caseStudy?.tagline && (
+                <blockquote>
+                  <p style={{ margin: 0, fontWeight: 500, color: "var(--text)" }}>
+                    {project.caseStudy.tagline}
+                  </p>
+                </blockquote>
+              )}
+
+              <h2>The Operational Problem</h2>
+              <p>{project.caseStudy?.problem}</p>
+
+              <h2>Architecture &amp; System Design</h2>
+              <p>{project.caseStudy?.architecture}</p>
+
+              <h2>The Solution &amp; Engineering Implementation</h2>
+              <p>{project.caseStudy?.solution}</p>
+
+              {project.caseStudy?.highlights && (
+                <>
+                  <h2>Key Technical Highlights</h2>
+                  <ul>
+                    {project.caseStudy.highlights.map((h, idx) => (
+                      <li key={idx}>{h}</li>
+                    ))}
+                  </ul>
+                </>
+              )}
+
+              {project.related && (
+                <div
+                  style={{
+                    marginTop: "2.5rem",
+                    padding: "1rem 1.25rem",
+                    borderRadius: "var(--radius)",
+                    border: "1px solid var(--border)",
+                    background: "var(--bg-alt)"
+                  }}
+                >
+                  <p style={{ margin: 0, fontSize: "0.9rem" }}>
+                    {project.related.text}{" "}
+                    <Link
+                      to={`/case-study/${project.related.slug}`}
+                      style={{ color: "var(--accent-text)", fontWeight: 500 }}
+                    >
+                      {project.related.linkText} &rarr;
+                    </Link>
+                  </p>
+                </div>
+              )}
+            </article>
+
+            {/* Sidebar */}
+            <aside className="detail-sidebar">
+              <div>
+                <p className="sidebar-section__title">Technology Stack</p>
+                <ul className="sidebar-list">
+                  {project.stack.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+
+              <div>
+                <p className="sidebar-section__title">Navigation</p>
+                <div style={{ display: "grid", gap: "0.5rem" }}>
+                  <Link to="/work" className="sidebar-link">
+                    &larr; All projects
+                  </Link>
+                  <Link to="/contact" className="sidebar-link">
+                    Get in touch &rarr;
+                  </Link>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </main>
+        <SiteFooter />
       </div>
-    </div>
     </>
   );
 }
-
-export default CaseStudy;
