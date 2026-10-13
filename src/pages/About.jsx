@@ -28,13 +28,13 @@ export default function About() {
                 the real world. I believe technology should solve practical operational
                 hurdles rather than add friction.
               </p>
-              <p>
+               {/*<p>
                 My work spans designing offline-first desktop systems for rural
                 coffee cooperatives, building custom delta-synchronization engines
                 to keep disconnected nodes aligned, integrating hardware peripherals
                 (weighing scales, printers), and developing multi-tenant web platforms
                 with robust data modeling and automated billing.
-              </p>
+              </p>*/}
             </div>
             <img
               className="about-intro__photo"
