@@ -119,8 +119,7 @@ const projects = [
     description:
       "A resilient, offline-capable field survey and crop analytics platform designed for smallholder farmer cooperatives and field officers working in remote agricultural corridors.",
     stack: ["TypeScript", "React", "Node.js", "PostgreSQL", "IndexedDB", "PWA", "Data Modeling"],
-    image: "/images/og-image.jpg",
-    altText: "SmartSeason field telemetry and agronomic tracking visualization",
+    image: null,
     seoTitle: "SmartSeason Field Monitoring | Agritech & Offline Data | Ian Kimani",
     status: "Prototype / Completed",
     featured: true,
