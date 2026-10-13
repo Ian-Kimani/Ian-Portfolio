@@ -3,13 +3,13 @@ const projects = [
     slug: "kahawamanager-edge",
     id: "01",
     title: "KahawaManager Edge",
-    year: "2026",
+    year: "2025",
     category: "Coffee Factory IoT & Edge Runtime",
     summary:
       "Offline-first desktop system for coffee factories. Connects directly to digital weighing scales + thermal printers , records deliveries locally (even during power/internet outages), prints receipts, and sends SMS confirmations to farmers.",
     description:
       "An offline-first desktop application engineered for rural coffee factories across Kenya. Interfacing directly with digital weighing scales and thermal receipt printers, it captures unalterable delivery weights even in areas with zero internet connectivity.",
-    stack: ["Python", "CustomTkinter", "SQLite / PostgreSQL", "PySerial", "ESC/POS", "Threading"],
+    stack: ["Python", "CustomTkinter", "PostgreSQL", "PySerial", "ESC/POS", "Threading"],
     image: "/images/kahawa_manager_edge.png",
     altText: "KahawaManager Edge desktop interface showing hardware integration and coffee weighing data",
     seoTitle: "KahawaManager Edge | Offline Desktop & Hardware Integration | Ian Kimani",
@@ -23,9 +23,9 @@ const projects = [
     caseStudy: {
       tagline: "Bridging physical industrial hardware with resilient offline data capture in rural factories.",
       problem:
-        "Rural coffee factories in Kenya often face frequent electrical outages and no cellular connectivity. Under traditional manual operations, thousands of smallholder farmers queue for hours while clerks handwrite delivery receipts in paper ledgers. This manual process causes severe administrative bottlenecks, arithmetic errors, and vulnerability to weight manipulation at the weighing station.",
+        "Rural coffee factories in Kenya often face frequent electrical outages and no cellular connectivity. Under traditional manual operations, thousands of smallholder farmers queue for hours while clerks handwrite delivery receipts in paper ledgers. This manual process causes severe time wastage, arithmetic errors, and vulnerability to weight manipulation at the weighing station.",
       architecture:
-        "Engineered as a standalone offline-first desktop application utilizing Python and CustomTkinter, backed by a local SQLite/PostgreSQL engine designed to guarantee zero data loss. The core technical foundation is direct serial hardware integration using `PySerial`, communicating over RS-232/USB with industrial digital weighing indicators. A dedicated multithreaded architecture isolates hardware polling from the UI event loop, ensuring sub-second response times without locking.",
+        "Engineered as a standalone offline-first desktop application utilizing Python and CustomTkinter, backed by a local PostgreSQL engine designed to guarantee zero data loss. The core technical foundation is direct serial hardware integration using `PySerial`, communicating over RS-232/USB with industrial digital weighing indicators. A dedicated multithreaded architecture isolates hardware polling from the UI event loop, ensuring sub-second response times without locking.",
       solution:
         "When a farmer places cherry sacks onto the weighing platform, the software queries the digital scale via serial protocols, locks the tare and gross weights, records an immutable delivery entry, and immediately prints a serialized duplicate receipt using an ESC/POS thermal printer. If cellular internet is momentarily detected, it queues SMS notifications. Even if the factory operates offline for weeks, weighing operations continue uninterrupted at full velocity.",
       highlights: [
@@ -61,7 +61,7 @@ const projects = [
     caseStudy: {
       tagline: "Consolidating distributed rural factory nodes through conflict-aware synchronization.",
       problem:
-        "While local factory stations run reliably offline on KahawaManager Edge, cooperative society chairmen and financial managers need central visibility over multiple dispersed wet mills. Consolidating season yields, auditing store requisitions, and issuing timely mobile money payouts to thousands of farmers previously required physical paper couriers or fragile spreadsheets.",
+        "While local factory stations run reliably offline on KahawaManager Edge, cooperative society chairmen and financial managers need central visibility over multiple dispersed coffee deliveries in the factory. Consolidating season yields, auditing store requisitions, and issuing timely mobile money payouts to thousands of farmers previously required physical paper couriers or fragile spreadsheets.",
       architecture:
         "Built with Node.js, Express, and PostgreSQL, the platform implements a custom Delta Sync protocol based on monotonically increasing revision tokens and idempotent payload processing. Whenever an edge machine establishes intermittent internet access, it submits compressed incremental logs. The cloud sync gateway processes batches inside ACID database transactions, preventing double-entry and handling intermittent packet loss gracefully.",
       solution:

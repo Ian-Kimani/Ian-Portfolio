@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Ian Kimani - Software Engineer | Full-Stack & Offline-First Systems"
+        title="Ian Kimani - Software Engineer | Full-Stack & AI"
         description="Ian Kimani is a software engineer based in Nairobi, Kenya, building practical offline-first systems, distributed sync architectures, and multi-tenant platforms."
         url="https://iankimani.me/"
       />
@@ -27,7 +27,7 @@ export default function Home() {
             <div className="intro__text">
               <h1 className="intro__greeting">Hi, I'm Ian</h1>
               <p className="intro__role">
-                Software Engineer | Full-Stack &amp; Offline-First Systems
+                Software Engineer | Full-Stack &amp; AI
               </p>
               <div className="intro__bio">
                 <p>

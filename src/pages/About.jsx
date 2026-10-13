@@ -49,27 +49,27 @@ export default function About() {
             <h2 className="about-section__title">Values &amp; Engineering Philosophy</h2>
             <div className="values-grid">
               <div className="value-item">
-                <p className="value-item__title">Reliability over assumptions</p>
+                <p className="value-item__title">Reliable Systems</p>
                 <p className="value-item__desc">
-                  Never assume perpetual 5G connectivity or uninterruptible power. Software should be built to persist transactions locally, fail gracefully, and recover without data loss.
+                  I prefer building software that is stable, maintainable, and works consistently.
                 </p>
               </div>
               <div className="value-item">
-                <p className="value-item__title">Rooted in operational reality</p>
+                <p className="value-item__title">Clear Thinking</p>
                 <p className="value-item__desc">
-                  Code exists in a physical context. Connecting software directly with digital weighing scales and hardware bridges eliminates manual bottlenecks and prevents record tampering.
+                  Good design and clean code make everything easier to understand and improve over time.
                 </p>
               </div>
               <div className="value-item">
-                <p className="value-item__title">Clean schemas and sound architecture</p>
+                <p className="value-item__title">Practical solutions</p>
                 <p className="value-item__desc">
-                  Databases are foundational. I invest deeply in clear relational models, idempotent sync protocols, strict RBAC, and reliable financial calculations.
+                  I focus on solving real problems rather than chasing technology for its own sake.
                 </p>
               </div>
               <div className="value-item">
-                <p className="value-item__title">Pragmatic product delivery</p>
+                <p className="value-item__title">Learning with AI</p>
                 <p className="value-item__desc">
-                  Solve real problems with the right tools. I prioritize simplicity, fast execution, clean code, and solutions that actually make people's workday easier.
+                  I’m actively exploring how AI can improve the tools and systems I build.
                 </p>
               </div>
             </div>
@@ -80,21 +80,27 @@ export default function About() {
             <h2 className="about-section__title">Focus areas</h2>
             <div className="values-grid">
               <div className="value-item">
-                <p className="value-item__title">Offline-first &amp; Edge Systems</p>
+                <p className="value-item__title">Backend systems  &amp; APIs</p>
                 <p className="value-item__desc">
-                  Desktop runtimes, local embedded databases (SQLite), and serial port hardware communications for high-speed edge operations.
+                  Designing reliable APIs, clean data models, and solid backend logic.
                 </p>
               </div>
               <div className="value-item">
-                <p className="value-item__title">Distributed Synchronization &amp; APIs</p>
+                <p className="value-item__title">Full-stack development</p>
                 <p className="value-item__desc">
-                  Custom delta-sync protocols, revision tracking, conflict resolution, and reliable RESTful services connecting distributed nodes to central cloud hubs.
+                  Building complete applications from the database to the user interface.
                 </p>
               </div>
               <div className="value-item">
-                <p className="value-item__title">Multi-tenant Platforms &amp; Automation</p>
+                <p className="value-item__title">Clean architecture &amp; data modeling </p>
                 <p className="value-item__desc">
-                  SaaS architectures with tenant data isolation, automated billing pipelines, utility meter apportionment, and programmatic messaging integrations (SMS, WhatsApp, M-Pesa).
+                  Creating maintainable systems with clear structure and well-designed databases.
+                </p>
+              </div>
+              <div className="value-item">
+                <p className="value-item__title">Exploring AI applications in software</p>
+                <p className="value-item__desc">
+                  Exploring how artificial intelligence can be integrated into software solutions to enhance functionality and user experience.
                 </p>
               </div>
             </div>
@@ -105,13 +111,13 @@ export default function About() {
             <h2 className="about-section__title">Now</h2>
             <ul className="now-list">
               <li>
-                Refining delta-synchronization protocols for rural agricultural cooperative deployments in Kenya.
+                Learning and experimenting with AI tools and frameworks to enhance software development and problem-solving capabilities.
               </li>
               <li>
-                Developing automated financial reconciliations and payment gateway pipelines.
+                Building and improving full-stack applications.
               </li>
               <li>
-                Exploring low-power telemetry, local-first web architectures, and system resilience.
+                Exploring better ways to design clean and maintainable systems.
               </li>
             </ul>
           </div>
