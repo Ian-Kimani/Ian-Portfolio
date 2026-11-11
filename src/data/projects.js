@@ -14,6 +14,16 @@ const projects = [
     altText: "KahawaManager Edge desktop interface showing hardware integration and coffee weighing data",
     seoTitle: "KahawaManager Edge | Offline Desktop & Hardware Integration | Ian Kimani",
     status: "Active / Field Deployment",
+    role: "Designed and built the offline desktop application, hardware integrations, local data flow, and receipt workflow.",
+    outcomes: [
+      "Keeps weighing operations running during power and connectivity interruptions.",
+      "Replaces handwritten delivery records with locally captured, auditable transactions.",
+      "Connects digital scales, thermal printers, and queued SMS notifications in one workflow."
+    ],
+    evidence: "Built for coffee factory operations in Kenya, with the system designed around the constraints of real field deployment rather than an always-online demo.",
+    links: {
+      repository: "https://github.com/Ian-Kimani/KahawaManager-Edge"
+    },
     featured: true,
     related: {
       slug: "kahawamanager-cloud",
@@ -52,6 +62,16 @@ const projects = [
     altText: "KahawaManager Cloud dashboard displaying distributed analytics and farmer financial records",
     seoTitle: "KahawaManager Cloud | Offline-First Sync Architecture | Ian Kimani",
     status: "Active / Production",
+    role: "Designed and built the cloud platform, multi-tenant data model, delta-sync workflow, and operational dashboards.",
+    outcomes: [
+      "Gives cooperative teams one view of activity across distributed factory stations.",
+      "Synchronizes incremental changes instead of repeatedly transferring complete datasets.",
+      "Brings delivery analytics, expenses, farmer advances, payouts, and SMS workflows into one system."
+    ],
+    evidence: "The cloud application is the central half of the KahawaManager system, paired with the Edge application for disconnected factory work.",
+    links: {
+      repository: "https://github.com/Ian-Kimani/KahawaManager-Cloud"
+    },
     featured: true,
     related: {
       slug: "kahawamanager-edge",
@@ -90,6 +110,16 @@ const projects = [
     altText: "Miliqo rental management dashboard showing property and rent collection data",
     seoTitle: "Miliqo | Property Management SaaS Case Study | Ian Kimani",
     status: "Live",
+    role: "Designed and built the full-stack product, including the relational data model, billing engine, RBAC, and tenant notifications.",
+    outcomes: [
+      "Turns recurring rent, utility, deposit, and arrears calculations into a repeatable billing workflow.",
+      "Gives landlords and property teams a shared view of occupancy, collections, expenses, and balances.",
+      "Reduces reliance on manual ledgers and spreadsheet reconciliation for multi-unit properties."
+    ],
+    evidence: "Miliqo is a working property-management product focused on the operational details that make rental software useful beyond a dashboard.",
+    links: {
+      repository: "https://github.com/Ian-Kimani/Miliqo---Property-Management-System"
+    },
     featured: true,
     caseStudy: {
       tagline: "Automating billing calculations and utility distribution across multi-unit properties.",
@@ -137,6 +167,50 @@ const projects = [
         "Agronomic assessment forms capturing soil health, fertilizer applications, and crop stages",
         "Geographical aggregation and early warning alerts for crop pest infestations",
         "Predictive harvest yield forecasting models based on historical delivery curves"
+      ]
+    }
+  },
+  {
+    slug: "tutapass",
+    id: "05",
+    title: "TutaPass",
+    year: "2026",
+    category: "AI Learning Product",
+    summary:
+      "Human-first AI study coach that helps AZ-900 learners understand why an answer is right, not just whether it is correct.",
+    description:
+      "A learning product built around explanation, misconception detection, and spaced review rather than simple quiz scores.",
+    stack: ["React", "Vite", "Node.js", "Express", "PostgreSQL", "Gemini", "SM-2"],
+    image: null,
+    altText: "TutaPass AI study coach dashboard for Azure fundamentals learners",
+    seoTitle: "TutaPass | AI Study Coach & Responsible AI | Ian Kimani",
+    status: "Live / Hackathon Project",
+    role: "Designed and built the learner experience, REST API, AI evaluation flow, study progress model, and fallback behavior.",
+    outcomes: [
+      "Turns each practice question into a loop of answering, explaining, reviewing, and improving.",
+      "Surfaces likely misconceptions through Teach-Back and Distractor Autopsy feedback.",
+      "Keeps the core demo usable when the AI service is unavailable through deterministic fallback content."
+    ],
+    evidence: "Built for the Power Learn Project #1MillionDevs Vibe Coding Hackathon, with a live demo and a documented API, data model, and architecture.",
+    links: {
+      demo: "https://tuta-pass.vercel.app",
+      repository: "https://github.com/Ian-Kimani/TutaPass"
+    },
+    featured: true,
+    caseStudy: {
+      tagline: "Most quiz apps tell learners whether they are right. TutaPass checks whether they understand why.",
+      problem:
+        "Learners can recognise cloud-service names and still struggle to distinguish similar ideas in a scenario. A correct answer may also be a lucky guess, but most quiz tools stop at correct or wrong.",
+      architecture:
+        "The React and Vite client communicates with an Express and PostgreSQL API. Gemini is used for structured explanations and Teach-Back evaluation, while the learning engine tracks readiness, misconceptions, and SM-2 spaced-repetition reviews.",
+      solution:
+        "TutaPass combines scenario-based questions, a Distractor Autopsy for every option, Teach-Back reasoning checks, a Misconception Map, and Mistake Cards. Learners can also switch between standard explanations, African real-life analogies, and optional Nairobi Sheng.",
+      highlights: [
+        "Structured JSON output for predictable AI responses instead of unbounded chatbot text",
+        "Deterministic fallback content when the Gemini service is slow or unavailable",
+        "SM-2 spaced repetition for mistakes that need another review",
+        "AI Transparency Lab showing prompts, safety constraints, and fallback state",
+        "Original practice content grounded in public learning outlines rather than exam dumps"
       ]
     }
   }

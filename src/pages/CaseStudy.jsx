@@ -96,6 +96,24 @@ export default function CaseStudy() {
               <h2>The Solution &amp; Engineering Implementation</h2>
               <p>{project.caseStudy?.solution}</p>
 
+              {project.outcomes && (
+                <>
+                  <h2>Outcome</h2>
+                  <ul>
+                    {project.outcomes.map((outcome) => (
+                      <li key={outcome}>{outcome}</li>
+                    ))}
+                  </ul>
+                </>
+              )}
+
+              {project.evidence && (
+                <>
+                  <h2>Evidence &amp; Context</h2>
+                  <p>{project.evidence}</p>
+                </>
+              )}
+
               {project.caseStudy?.highlights && (
                 <>
                   <h2>Key Technical Highlights</h2>
@@ -133,6 +151,15 @@ export default function CaseStudy() {
             {/* Sidebar */}
             <aside className="detail-sidebar">
               <div>
+                {project.role && (
+                  <>
+                    <p className="sidebar-section__title">My role</p>
+                    <p className="sidebar-role">{project.role}</p>
+                  </>
+                )}
+              </div>
+
+              <div>
                 <p className="sidebar-section__title">Technology Stack</p>
                 <ul className="sidebar-list">
                   {project.stack.map((item) => (
@@ -140,6 +167,24 @@ export default function CaseStudy() {
                   ))}
                 </ul>
               </div>
+
+              {project.links && (
+                <div>
+                  <p className="sidebar-section__title">Links</p>
+                  <div style={{ display: "grid", gap: "0.5rem" }}>
+                    {project.links.demo && (
+                      <a className="sidebar-link" href={project.links.demo} target="_blank" rel="noreferrer">
+                        Live demo &rarr;
+                      </a>
+                    )}
+                    {project.links.repository && (
+                      <a className="sidebar-link" href={project.links.repository} target="_blank" rel="noreferrer">
+                        Source code &rarr;
+                      </a>
+                    )}
+                  </div>
+                </div>
+              )}
 
               <div>
                 <p className="sidebar-section__title">Navigation</p>
