@@ -64,6 +64,18 @@ export default function Contact() {
                 <p className="value-item__desc">Nairobi, Kenya</p>
               </div>
               <div className="value-item">
+                <p className="value-item__title">Resume</p>
+                <p className="value-item__desc">
+                  <a
+                    href="/Ian_Wabacha_Kimani_Resume.pdf"
+                    className="sidebar-link"
+                    download
+                  >
+                    Download résumé &rarr;
+                  </a>
+                </p>
+              </div>
+              <div className="value-item">
                 <p className="value-item__title">Profiles</p>
                 <div className="socials" style={{ marginTop: "0.25rem" }}>
                   <a

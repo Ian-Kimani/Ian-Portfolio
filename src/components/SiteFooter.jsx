@@ -20,6 +20,9 @@ export default function SiteFooter() {
           <a href="mailto:kimaniian273@gmail.com">
             Email
           </a>
+          <a href="/Ian_Wabacha_Kimani_Resume.pdf" download>
+            Resume
+          </a>
         </div>
       </div>
     </footer>
