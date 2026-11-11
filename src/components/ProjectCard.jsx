@@ -9,6 +9,7 @@ export default function ProjectCard({ project }) {
         <span className="project-card__year">{project.year}</span>
       </div>
       <p className="project-card__summary">{project.summary}</p>
+      <p className="project-card__status">{project.status}</p>
       <div className="project-card__meta">
         {project.stack.map((tag) => (
           <span key={tag} className="tag">

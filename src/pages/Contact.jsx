@@ -39,8 +39,9 @@ export default function Contact() {
           <div className="page-header">
             <h1 className="page-header__title">Contact</h1>
             <p className="page-header__desc">
-              I'm always open to discussing software engineering opportunities,
-              distributed sync problems, hardware integrations, or interesting collaborations.
+              I'm open to software engineering opportunities, especially work involving
+              backend systems, full-stack products, distributed sync, or practical AI.
+              If you’re building something useful, I’d be glad to hear about it.
             </p>
           </div>
 

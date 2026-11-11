@@ -27,14 +27,14 @@ export default function Home() {
             <div className="intro__text">
               <h1 className="intro__greeting">Hi, I'm Ian</h1>
               <p className="intro__role">
-                Software Engineer | Full-Stack &amp; AI
+                Software Engineer building dependable systems
               </p>
               <div className="intro__bio">
                 <p>
-                  Welcome to my corner of the internet. I'm a software engineer based in Nairobi, Kenya. I build software designed to work in the real world—focusing on backend reliability, sound system design, and practical tools that solve tangible problems for people and businesses.
+                  I'm a software engineer based in Nairobi, Kenya. I build backend systems, offline-first applications, and practical tools for businesses working with unreliable connectivity, physical hardware, and complex operations.
                 </p>
                 <p>
-                  I’m especially interested in software engineering best practices and applying AI to make systems smarter and more useful.
+                  I care about software that keeps working outside the happy path—and I’m open to engineering roles where I can help build products that people rely on.
                 </p>
               </div>
               <div className="socials">
@@ -112,9 +112,9 @@ export default function Home() {
                 </p>
               </div>
               <div className="value-item">
-                <p className="value-item__title">Growing with AI</p>
+                <p className="value-item__title">Useful AI</p>
                 <p className="value-item__desc">
-                  I’m actively exploring how AI can improve the tools and systems I build.
+                  I’m interested in AI when it makes a product more helpful, understandable, or resilient—not just because it is fashionable.
                 </p>
               </div>
             </div>
