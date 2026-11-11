@@ -177,9 +177,9 @@ const projects = [
     year: "2026",
     category: "AI Learning Product",
     summary:
-      "Human-first AI study coach that helps AZ-900 learners understand why an answer is right, not just whether it is correct.",
+      "Human-first AI study coach that helps learners understand why an answer is right, not just whether it is correct.",
     description:
-      "A learning product built around explanation, misconception detection, and spaced review rather than simple quiz scores.",
+      "A flexible learning product built around explanation, misconception detection, and spaced review rather than simple quiz scores. AZ-900 is its current starting track, with the learning loop designed to grow to other subjects and certifications.",
     stack: ["React", "Vite", "Node.js", "Express", "PostgreSQL", "Gemini", "SM-2"],
     image: null,
     altText: "TutaPass AI study coach dashboard for Azure fundamentals learners",

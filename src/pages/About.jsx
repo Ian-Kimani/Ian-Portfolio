@@ -23,20 +23,10 @@ export default function About() {
               <h1 className="about-intro__title">About</h1>
               <p>Software Engineer. Based in Nairobi, Kenya.</p>
               <p>
-                I build software for the parts of the world that do not behave like
-                a developer laptop: unreliable internet, power interruptions, physical
-                devices, messy data, and busy people trying to get work done.
-              </p>
-              <p>
-                That has led me to work on offline-first systems for coffee
-                cooperatives, hardware integrations, distributed synchronization,
-                multi-tenant platforms, and an AI study coach. I enjoy the engineering
-                decisions behind the interface: how data moves, what happens when a
-                service is unavailable, and how to make a system easier to trust.
-              </p>
-              <p>
-                I’m currently open to software engineering opportunities focused on
-                backend systems, full-stack products, and distributed applications.
+                I'm a software engineer passionate about backend architecture,
+                system design, and building practical software that solves meaningful
+                problems. I believe technology should solve practical operational
+                hurdles rather than add friction.
               </p>
             </div>
             <img
@@ -70,9 +60,9 @@ export default function About() {
                 </p>
               </div>
               <div className="value-item">
-                <p className="value-item__title">Useful AI</p>
+                <p className="value-item__title">Learning with AI</p>
                 <p className="value-item__desc">
-                  I’m exploring AI as a practical product capability, with attention to transparency, fallback behavior, and user trust.
+                  I’m actively exploring how AI can improve the tools and systems I build.
                 </p>
               </div>
             </div>
@@ -101,9 +91,9 @@ export default function About() {
                 </p>
               </div>
               <div className="value-item">
-                <p className="value-item__title">AI in practical products</p>
+                <p className="value-item__title">Exploring AI applications in software</p>
                 <p className="value-item__desc">
-                  Building focused AI features that help people learn, decide, or complete work without hiding how the system behaves.
+                  Exploring how artificial intelligence can be integrated into software solutions to enhance functionality and user experience.
                 </p>
               </div>
             </div>
@@ -114,7 +104,7 @@ export default function About() {
             <h2 className="about-section__title">Now</h2>
             <ul className="now-list">
               <li>
-                Building and refining TutaPass, an AI study coach designed to help learners understand why an answer is right.
+                Learning and experimenting with AI tools and frameworks to enhance software development and problem-solving capabilities.
               </li>
               <li>
                 Building and improving full-stack applications.

@@ -31,7 +31,7 @@ export default function Home() {
               </p>
               <div className="intro__bio">
                 <p>
-                  I'm a software engineer based in Nairobi, Kenya. I build backend systems, offline-first applications, and practical tools for businesses working with unreliable connectivity, physical hardware, and complex operations.
+                  Welcome to my corner of the internet. I'm a software engineer based in Nairobi, Kenya. I build software designed to work in the real world—focusing on backend reliability, sound system design, and practical tools that solve tangible problems for people and businesses.
                 </p>
                 <p>
                   I care about software that keeps working outside the happy path—and I’m open to engineering roles where I can help build products that people rely on.
