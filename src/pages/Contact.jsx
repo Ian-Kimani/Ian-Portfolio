@@ -69,9 +69,17 @@ export default function Contact() {
                   <a
                     href="/Ian_Wabacha_Kimani_Resume.pdf"
                     className="sidebar-link"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View resume &rarr;
+                  </a>
+                  <a
+                    href="/Ian_Wabacha_Kimani_Resume.pdf"
+                    className="sidebar-link"
                     download
                   >
-                    Download résumé &rarr;
+                    Download resume &rarr;
                   </a>
                 </p>
               </div>
