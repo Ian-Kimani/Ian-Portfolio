@@ -42,6 +42,13 @@ export default function SiteHeader() {
               </Link>
             );
           })}
+          <a
+            href="/Ian_Wabacha_Kimani_Resume.pdf"
+            className="site-nav__link"
+            download
+          >
+            Resume
+          </a>
         </nav>
         <button
           className="theme-toggle"
