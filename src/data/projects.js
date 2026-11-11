@@ -139,40 +139,8 @@ const projects = [
     }
   },
   {
-    slug: "smartseason",
-    id: "04",
-    title: "SmartSeason Field Monitoring",
-    year: "2025",
-    category: "Agritech : Field Telemetry",
-    summary:
-      "Platform for agricultural officers to track crop progress, soil conditions, and harvest projections.",
-    description:
-      "A resilient, offline-capable field survey and crop analytics platform designed for smallholder farmer cooperatives and field officers working in remote agricultural corridors.",
-    stack: ["TypeScript", "React", "Node.js", "PostgreSQL", "IndexedDB", "PWA", "Data Modeling"],
-    image: null,
-    seoTitle: "SmartSeason Field Monitoring | Agritech & Offline Data | Ian Kimani",
-    status: "Prototype / Completed",
-    featured: true,
-    caseStudy: {
-      tagline: "Reliable agronomic data capture and yield forecasting across disconnected agricultural corridors.",
-      problem:
-        "Field agronomists visiting smallholder coffee and macadamia farmers spend most of their field days in remote areas with zero cellular connectivity. Paper-based agronomic surveys resulted in delayed reporting on pest infestations, lost soil health observations, and inaccurate yield estimates for cooperative seasonal planning.",
-      architecture:
-        "Constructed as a Progressive Web Application (PWA) with a local-first storage model leveraging browser IndexedDB. Field agronomists can execute complex assessment forms, record GPS geo-stamps, and attach compressed field photos offline. An intelligent sync worker detects network availability and securely pushes delta bundles to a central PostgreSQL database.",
-      solution:
-        "SmartSeason enables field extension teams to inspect hundreds of farmer plots seamlessly without worrying about signal bars. The centralized cooperative dashboard translates collected data into agronomic heatmaps, flagging pest outbreaks early and generating predictive harvest timelines that help cooperatives negotiate export contracts in advance.",
-      highlights: [
-        "Local-first Progressive Web App with IndexedDB offline data cache",
-        "Automated background delta sync engine with network quality detection",
-        "Agronomic assessment forms capturing soil health, fertilizer applications, and crop stages",
-        "Geographical aggregation and early warning alerts for crop pest infestations",
-        "Predictive harvest yield forecasting models based on historical delivery curves"
-      ]
-    }
-  },
-  {
     slug: "tutapass",
-    id: "05",
+    id: "04",
     title: "TutaPass",
     year: "2026",
     category: "AI Learning Product",
@@ -181,17 +149,17 @@ const projects = [
     description:
       "A flexible learning product built around explanation, misconception detection, and spaced review rather than simple quiz scores. AZ-900 is its current starting track, with the learning loop designed to grow to other subjects and certifications.",
     stack: ["React", "Vite", "Node.js", "Express", "PostgreSQL", "Gemini", "SM-2"],
-    image: null,
-    altText: "TutaPass AI study coach dashboard for Azure fundamentals learners",
+    image: "/images/tutapass.png",
+    altText: "TutaPass study coach dashboard showing learner progress across Azure fundamentals topics",
     seoTitle: "TutaPass | AI Study Coach & Responsible AI | Ian Kimani",
-    status: "Live / Hackathon Project",
+    status: "Live / Independent Project",
     role: "Designed and built the learner experience, REST API, AI evaluation flow, study progress model, and fallback behavior.",
     outcomes: [
       "Turns each practice question into a loop of answering, explaining, reviewing, and improving.",
       "Surfaces likely misconceptions through Teach-Back and Distractor Autopsy feedback.",
       "Keeps the core demo usable when the AI service is unavailable through deterministic fallback content."
     ],
-    evidence: "Built for the Power Learn Project #1MillionDevs Vibe Coding Hackathon, with a live demo and a documented API, data model, and architecture.",
+    evidence: "TutaPass has a live demo and a documented API, data model, and architecture. Its learning loop is designed to grow from the current Azure fundamentals track to other subjects and certifications.",
     links: {
       demo: "https://tuta-pass.vercel.app",
       repository: "https://github.com/Ian-Kimani/TutaPass"

@@ -4,6 +4,14 @@ import { Link } from "react-router-dom";
 export default function ProjectCard({ project }) {
   return (
     <Link to={`/case-study/${project.slug}`} className="project-card">
+      {project.image && (
+        <img
+          className="project-card__image"
+          src={project.image}
+          alt={project.altText || `${project.title} project screenshot`}
+          loading="lazy"
+        />
+      )}
       <div className="project-card__header">
         <span className="project-card__title">{project.title}</span>
         <span className="project-card__year">{project.year}</span>

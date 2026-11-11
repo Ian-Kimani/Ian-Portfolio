@@ -45,9 +45,10 @@ export default function SiteHeader() {
           <a
             href="/Ian_Wabacha_Kimani_Resume.pdf"
             className="site-nav__link"
-            download
+            target="_blank"
+            rel="noreferrer"
           >
-            Resume
+            View resume
           </a>
         </nav>
         <button

@@ -321,6 +321,15 @@ code, pre, .mono {
   display: grid;
 }
 
+.project-card__image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-alt);
+}
+
 .project-card:hover {
   border-color: var(--border-strong);
   box-shadow: var(--shadow);
