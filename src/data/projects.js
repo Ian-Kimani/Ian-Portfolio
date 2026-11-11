@@ -181,8 +181,8 @@ const projects = [
     description:
       "A flexible learning product built around explanation, misconception detection, and spaced review rather than simple quiz scores. AZ-900 is its current starting track, with the learning loop designed to grow to other subjects and certifications.",
     stack: ["React", "Vite", "Node.js", "Express", "PostgreSQL", "Gemini", "SM-2"],
-    image: null,
-    altText: "TutaPass AI study coach dashboard for Azure fundamentals learners",
+    image: "/images/tutapass.png",
+    altText: "TutaPass study coach dashboard showing learner progress across Azure fundamentals topics",
     seoTitle: "TutaPass | AI Study Coach & Responsible AI | Ian Kimani",
     status: "Live / Hackathon Project",
     role: "Designed and built the learner experience, REST API, AI evaluation flow, study progress model, and fallback behavior.",
